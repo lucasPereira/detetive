@@ -22,6 +22,17 @@ public class TesteTipoCarta {
 	@Test
 	public void armas() {
 		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.CASTICAL.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.CANO.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.CHAVE_INGLESA.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.CORDA.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.PUNHAL.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.REVOLVER.obterCategoria());
+		assertEquals(TipoCategoriaCarta.ARMA, TipoCarta.FACA.obterCategoria());
+	}
+
+	@Test
+	public void comodos() {
+		assertEquals(TipoCategoriaCarta.COMODO, TipoCarta.BIBLIOTECA.obterCategoria());
 	}
 
 }
